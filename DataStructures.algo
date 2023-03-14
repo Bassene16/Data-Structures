@@ -1,0 +1,47 @@
+ALGORITHM traverse_array
+VAR
+    tab1 :array_of1 INTEGER[4];
+    tab2 :array_of2 INTEGER[5];
+    i,j : INTEGER;
+BEGIN
+    tab1 := {3,1,7,9}
+    FOR i FROM 0 TO 4 STEP 1  DO
+        (tab1[i]);
+    END_FOR
+    BEGIN
+        tab2 := {2,4,1,9,3}
+        FOR j FROM 0 TO 5 STEP 1  DO
+            (tab2[j]);
+        END_FOR
+    END
+        sum= 0;
+            IF (tab1[i] != tab2[j]) THEN
+                sum := sum + i;
+            END_IF  
+                IF (tab2[j] != tab1[i]) THEN
+                    sum := sum + j;
+                END_IF            
+END
+
+
+PROCEDURE dot_product(v1,v2: INTEGER)
+VAR
+    tab : array INTEGER;
+    ps : produitscalaire INTEGER;
+    v1,v2 : vecteurs INTEGER;
+    R : INTEGER;
+BEGIN
+    FOR i FROM 0 TO tab.length-1 STEP 1  DO
+        ps := v1*v2;
+    END_FOR       
+END
+ALGORITHM Produit_scalaire
+VAR
+    n : paires_vecteurs INTEGER;
+BEGIN
+    FOR i FROM 0 TO tab.length STEP 1  DO
+        IF In dot_product(v1,v2: orthogonaux) THEN
+        ps(v1 & v2)= 0;
+        END_IF
+    END_FOR
+END
